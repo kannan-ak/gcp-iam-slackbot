@@ -1,0 +1,10 @@
+runtime: python38
+env: standard
+env_variables:
+  INFRA_CHANNEL: "https://hooks.slack.com/services/xxxx"
+  SLACK_TOKEN_NAME: "slack-infrabot-token"
+  ORG_ID: "xxxxxxxx"
+entrypoint: gunicorn -b :8080 main:app
+manual_scaling:
+  instances: 1
+service: 1pbot-v1
