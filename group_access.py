@@ -145,7 +145,7 @@ def add_member(service, group_id, user_name, response_url):
                 }
             ],
             "preferredMemberKey": {
-                "id": user_name+".1p@zeotap.com"
+                "id": user_name+"@example.com"
             }
         }
         # group ID can be found from list groups
